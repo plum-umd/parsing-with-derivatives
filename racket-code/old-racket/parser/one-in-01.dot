@@ -1,0 +1,57 @@
+digraph {
+
+node [];
+"44" [label = "or"
+];
+
+"45" [label = "or"
+];
+
+"47" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"49" [shape = "record", label = "eps* | (set '())"
+];
+
+"50" [shape = "record", label = "eps* | (set 1)"
+];
+
+"47":L -> "49" [
+];
+
+"47":R -> "50" [
+];
+
+"48" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"43" [shape = "record", label = "token | 1"
+];
+
+"48":L -> "44" [
+];
+
+"48":R -> "43" [
+];
+
+"45" -> "47" [
+];
+
+"45" -> "48" [
+];
+
+"46" [label = "empty"
+];
+
+"44" -> "45" [
+];
+
+"44" -> "46" [
+];
+
+"44" [shape = "doublecircle"
+];
+
+}

@@ -1,0 +1,258 @@
+digraph {
+
+node [];
+"69" [label = "or"
+];
+
+"70" [label = "or"
+];
+
+"71" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"73" [shape = "record", label = "eps* | (set '())"
+];
+
+"56" [label = "empty"
+];
+
+"71":L -> "73" [
+];
+
+"71":R -> "56" [
+];
+
+"72" [label = "or"
+];
+
+"74" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"76" [shape = "record", label = "eps* | (set '(() . 1))"
+];
+
+"74":L -> "76" [
+];
+
+"74":R -> "56" [
+];
+
+"75" [label = "or"
+];
+
+"77" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"79" [shape = "record", label = "eps* | (set '((() . 1) . 1))"
+];
+
+"77":L -> "79" [
+];
+
+"77":R -> "56" [
+];
+
+"78" [label = "or"
+];
+
+"80" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"82" [shape = "record", label = "eps* | (set '(((() . 1) . 1) . 1))"
+];
+
+"80":L -> "82" [
+];
+
+"80":R -> "56" [
+];
+
+"81" [label = "or"
+];
+
+"83" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"85" [shape = "record", label = "eps* | (set '((((() . 1) . 1) . 1) . 1))"
+];
+
+"83":L -> "85" [
+];
+
+"83":R -> "56" [
+];
+
+"84" [label = "or"
+];
+
+"86" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"88" [shape = "record", label = "eps* | (set '(((((() . 1) . 1) . 1) . 1) . 1))"
+];
+
+"86":L -> "88" [
+];
+
+"86":R -> "56" [
+];
+
+"87" [label = "or"
+];
+
+"89" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"91" [shape = "record", label = "eps* | (set '((((((() . 1) . 1) . 1) . 1) . 1) . 1))"
+];
+
+"89":L -> "91" [
+];
+
+"89":R -> "56" [
+];
+
+"90" [label = "or"
+];
+
+"92" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"94" [shape = "record", label = "eps* | (set '(((((((() . 1) . 1) . 1) . 1) . 1) . 1) . 1))"
+];
+
+"92":L -> "94" [
+];
+
+"92":R -> "56" [
+];
+
+"93" [label = "or"
+];
+
+"95" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"97" [shape = "record", label = "eps* | (set '((((((((() . 1) . 1) . 1) . 1) . 1) . 1) . 1) . 1))"
+];
+
+"95":L -> "97" [
+];
+
+"95":R -> "56" [
+];
+
+"96" [label = "or"
+];
+
+"98" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"100" [shape = "record", label = "eps* | (set '(((((((((() . 1) . 1) . 1) . 1) . 1) . 1) . 1) . 1) . 1))"
+];
+
+"50" [shape = "record", label = "eps* | (set 1)"
+];
+
+"98":L -> "100" [
+];
+
+"98":R -> "50" [
+];
+
+"99" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"43" [shape = "record", label = "token | 1"
+];
+
+"99":L -> "69" [
+];
+
+"99":R -> "43" [
+];
+
+"96" -> "98" [
+];
+
+"96" -> "99" [
+];
+
+"93" -> "95" [
+];
+
+"93" -> "96" [
+];
+
+"90" -> "92" [
+];
+
+"90" -> "93" [
+];
+
+"87" -> "89" [
+];
+
+"87" -> "90" [
+];
+
+"84" -> "86" [
+];
+
+"84" -> "87" [
+];
+
+"81" -> "83" [
+];
+
+"81" -> "84" [
+];
+
+"78" -> "80" [
+];
+
+"78" -> "81" [
+];
+
+"75" -> "77" [
+];
+
+"75" -> "78" [
+];
+
+"72" -> "74" [
+];
+
+"72" -> "75" [
+];
+
+"70" -> "71" [
+];
+
+"70" -> "72" [
+];
+
+"46" [label = "empty"
+];
+
+"69" -> "70" [
+];
+
+"69" -> "46" [
+];
+
+"69" [shape = "doublecircle"
+];
+
+}

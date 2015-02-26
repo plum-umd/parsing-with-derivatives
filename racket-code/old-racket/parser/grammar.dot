@@ -1,0 +1,323 @@
+digraph {
+
+node [];
+"1" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"2" [label = "red"
+];
+
+"4" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"5" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"7" [label = "red"
+];
+
+"8" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"9" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"10" [label = "red"
+];
+
+"11" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"12" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"13" [label = "red"
+];
+
+"14" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"15" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"16" [label = "red"
+];
+
+"17" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"18" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"19" [label = "red"
+];
+
+"20" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"21" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"22" [label = "red"
+];
+
+"23" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"24" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"25" [label = "red"
+];
+
+"26" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"27" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"28" [label = "red"
+];
+
+"29" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"30" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"31" [label = "red"
+];
+
+"32" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"3" [label = "or"
+];
+
+"33" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"35" [label = "or"
+];
+
+"36" [label = "red"
+];
+
+"38" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"39" [shape = "record", label = "token | lp"
+];
+
+"38":L -> "39" [
+];
+
+"38":R -> "32" [
+];
+
+"36" -> "38" [
+];
+
+"37" [shape = "record", label = "token | atom"
+];
+
+"35" -> "36" [
+];
+
+"35" -> "37" [
+];
+
+"33":L -> "35" [
+];
+
+"33":R -> "3" [
+];
+
+"34" [shape = "record", label = "eps* | (set '())"
+];
+
+"3" -> "33" [
+];
+
+"3" -> "34" [
+];
+
+"6" [shape = "record", label = "token | rp"
+];
+
+"32":L -> "3" [
+];
+
+"32":R -> "6" [
+];
+
+"31" -> "32" [
+];
+
+"30":L -> "31" [
+];
+
+"30":R -> "3" [
+];
+
+"29":L -> "30" [
+];
+
+"29":R -> "6" [
+];
+
+"28" -> "29" [
+];
+
+"27":L -> "28" [
+];
+
+"27":R -> "3" [
+];
+
+"26":L -> "27" [
+];
+
+"26":R -> "6" [
+];
+
+"25" -> "26" [
+];
+
+"24":L -> "25" [
+];
+
+"24":R -> "3" [
+];
+
+"23":L -> "24" [
+];
+
+"23":R -> "6" [
+];
+
+"22" -> "23" [
+];
+
+"21":L -> "22" [
+];
+
+"21":R -> "3" [
+];
+
+"20":L -> "21" [
+];
+
+"20":R -> "6" [
+];
+
+"19" -> "20" [
+];
+
+"18":L -> "19" [
+];
+
+"18":R -> "3" [
+];
+
+"17":L -> "18" [
+];
+
+"17":R -> "6" [
+];
+
+"16" -> "17" [
+];
+
+"15":L -> "16" [
+];
+
+"15":R -> "3" [
+];
+
+"14":L -> "15" [
+];
+
+"14":R -> "6" [
+];
+
+"13" -> "14" [
+];
+
+"12":L -> "13" [
+];
+
+"12":R -> "3" [
+];
+
+"11":L -> "12" [
+];
+
+"11":R -> "6" [
+];
+
+"10" -> "11" [
+];
+
+"9":L -> "10" [
+];
+
+"9":R -> "3" [
+];
+
+"8":L -> "9" [
+];
+
+"8":R -> "6" [
+];
+
+"7" -> "8" [
+];
+
+"5":L -> "7" [
+];
+
+"5":R -> "3" [
+];
+
+"4":L -> "5" [
+];
+
+"4":R -> "6" [
+];
+
+"2" -> "4" [
+];
+
+"1":L -> "2" [
+];
+
+"1":R -> "3" [
+];
+
+"1" [shape = "doublecircle"
+];
+
+}

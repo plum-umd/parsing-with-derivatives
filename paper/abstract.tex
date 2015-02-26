@@ -1,0 +1,46 @@
+We present a functional approach to parsing unrestricted context-free grammars
+based on Brzozowski's derivative of regular expressions.
+%
+If we consider context-free grammars as recursive regular expressions,
+Brzozowski's equational theory extends without modification to context-free
+grammars (as well as parser combinators).
+%
+The technique handles left-recursive, right-recursive, infinitely
+recursive and ambiguous grammars to produce a parse forest for any input.
+
+The supporting actors in this story are three concepts familiar to functional
+programmers---laziness, memoization and fixed points.
+%
+These techniques allow Brzozowski's original equations to be transliterated
+into purely functional code; about 30 lines spread over three functions.
+ 
+
+Yet, this almost impossibly brief implementation has a drawback: its
+performance is sour---in both theory \emph{and} practice.
+%
+The culprit?
+%
+Each derivative can \emph{double} the size of a grammar, and with it, the cost
+of the next derivative.
+
+
+Fortunately, much of the new structure inflicted by each derivative is
+detritus: it no longer contributes to the meaning of the grammar, and can be
+removed.
+%
+To eliminate it, we once again exploit laziness, memoization and fixed-points
+to transliterate an equational theory which prunes such debris.
+%
+We introduce two optimization under which drop parsing times dramatically. 
+
+We equip the functional programmer with executable equational theories for
+parsing with derivatives: these theories abbreviate 
+understanding and implementation of parsing arbitrary context-free languages.
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "paper-sigplan.tex"
+%%% End: 
+

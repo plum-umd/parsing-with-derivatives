@@ -1,0 +1,32 @@
+digraph {
+
+node [];
+"40" [label = "or"
+];
+
+"41" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"43" [shape = "record", label = "token | 1"
+];
+
+"41":L -> "40" [
+];
+
+"41":R -> "43" [
+];
+
+"42" [shape = "record", label = "eps* | (set '())"
+];
+
+"40" -> "41" [
+];
+
+"40" -> "42" [
+];
+
+"40" [shape = "doublecircle"
+];
+
+}

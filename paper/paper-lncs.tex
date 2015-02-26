@@ -1,0 +1,56 @@
+% This is LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.3 for LaTeX2e
+%
+\documentclass{llncs}
+%
+\usepackage{amsmath,amssymb,latexsym}
+
+\usepackage{code}
+
+\let\comp=\undefined
+\let\inst=\undefined
+
+
+\input{meta}
+\input{matt-might-macros}
+\input{local-macros}
+
+\usepackage{stmaryrd}
+
+\usepackage[nocenter]{qtree}
+
+\bibliographystyle{acm}
+
+
+\begin{document}
+%
+%
+\title{\mylongtitle}
+%
+\titlerunning{\myshorttitle}
+%
+\author{Matthew Might \and David Darais}
+%
+\authorrunning{Might, Darais}   % abbreviated author list (for running head)
+%
+\institute{University of Utah, Salt Lake City, Utah, USA,\\
+\email{might@cs.utah.edu}, %\\ WWW home page:
+%\texttt{http://matt.might.net/}
+\email{darais@cs.utah.edu}}
+
+
+\maketitle              % typeset the title of the contribution
+
+\begin{abstract}
+  \input{abstract}
+\end{abstract}
+
+
+\input{content}
+
+
+\bibliography{mattmight}
+
+\end{document}

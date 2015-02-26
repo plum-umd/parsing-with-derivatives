@@ -1,0 +1,615 @@
+% Definitions.
+\newcommand{\defterm}[1]{\textbf{#1}}
+
+
+% Latin.
+\newcommand{\vs}{{\emph{v{.}}}}
+\newcommand{\ie}{\emph{i.e.}}
+\newcommand{\eg}{\emph{e.g.}}
+\newcommand{\etc}{\emph{etc.}}
+\newcommand{\etal}{\emph{et al.}}
+
+
+% Mathematical typesetting.
+\newcommand{\syn}[1]{\mathsf{#1}}
+\newcommand{\var}[1]{\mathit{#1}}
+\newcommand{\s}[1]{\mathit{#1}}
+
+
+% Number theory.
+\DeclareMathOperator{\lcm}{lcm}
+
+
+
+% Functions.
+\newcommand{\parto}{\rightharpoonup}
+\newcommand{\dom}{\var{dom}}
+\newcommand{\range}{\var{range}}
+\newcommand{\image}{\var{image}}
+\newcommand{\preimage}{\var{preimage}}
+\newcommand{\compose}{\mathrel{\circ}}
+
+\newcommand{\monto}{\xrightarrow{\mathrm{mon}}}
+
+\newcommand{\Fix}{\mathit{Fix}}
+\newcommand{\Asc}{\mathit{Asc}}
+\newcommand{\Desc}{\mathit{Desc}}
+\newcommand{\Ch}{\mathit{Ch}}
+\newcommand{\Red}{\mathit{Red}}
+\newcommand{\Ext}{\mathit{Ext}}
+
+
+\newcommand{\Kleene}{K}
+
+
+
+% Sets.
+
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\setbuild}[2]{\left\{ #1 : #2\right\}}
+
+\newcommand{\Pow}[1]{{\mathcal{P}\left(#1\right)}}
+\newcommand{\PowSm}[1]{{\mathcal{P}(#1)}}
+
+\newcommand{\Int}[1]{{\mathit{Int}(#1)}}
+
+\newcommand{\union}{\cup}
+\newcommand{\intersect}{\cap}
+\newcommand{\Union}{\bigcup}
+\newcommand{\Intersect}{\bigcap}
+\newcommand{\comp}[1]{{\overline{#1}}}
+
+\newcommand{\Univ}{\mathbb{U}}
+\newcommand{\Primes}{\mathbb{P}}
+\newcommand{\Nats}{{\mathbb{N}}}
+\newcommand{\Ints}{{\mathbb{Z}}}
+\newcommand{\Reals}{{\mathbb{R}}}
+\newcommand{\Rats}{{\mathbb{Q}}}
+\newcommand{\Comps}{{\mathbb{C}}}
+
+\newcommand{\setsize}[1]{{|#1|}}
+
+
+% Vectors.
+\newcommand{\vect}[1]{\langle #1\rangle}
+\newcommand{\vecp}[1]{\vec{#1}\;'}
+\newcommand{\bra}[1]{\langle #1 |}
+\newcommand{\ket}[1]{| #1 \rangle}
+\newcommand{\braket}[2]{\langle #1 | #2 \rangle}
+\newcommand{\length}{\mathit{length}}
+\newcommand{\vecappend}{\mathrel{+\!\!\!+}}
+
+
+
+% Relations.
+\newcommand{\DownTo}{\mathrel{\Downarrow}}
+\newcommand{\To}{\mathrel{\Rightarrow}}
+\newcommand{\TO}{\mathrel{\Rrightarrow}}
+\newcommand{\Trito}{\mathrel{\rightarrowtriangle}}
+
+\newcommand{\relR}{\mathrel{R}}
+
+
+% Cartesian products.
+\newcommand{\tpl}[1]{\left(#1\right)}
+
+
+% Order theory.
+\newcommand{\wt}{\sqsubseteq}
+\newcommand{\st}{\sqsupseteq}
+\newcommand{\join}{\sqcup}
+\newcommand{\meet}{\sqcap}
+\newcommand{\bigjoin}{\bigsqcup}
+\newcommand{\bigmeet}{\bigsqcap}
+\newcommand{\lub}{\mbox{$\bigsqcup$}\,}
+\newcommand{\glb}{\mbox{$\bigsqcap$}\,}
+\newcommand{\Up}{\mathrm{Up}}
+\newcommand{\Low}{\mathrm{Low}}
+
+\DeclareMathOperator{\gfp}{gfp}
+\DeclareMathOperator{\lfp}{lfp}
+
+
+
+% Logic.
+\newcommand{\longand}{\;\;\;\;\;\;\;}
+\newcommand{\infer}[2]{{\begin{array}{c}\renewcommand{\arraystretch}{1.8}#1\\ \hline #2\end{array}}}
+\newcommand{\iffer}[2]{\begin{array}{c}#1\\ \hline\hline #2\end{array}}
+\newcommand{\ltrue}{{\mathbf{true}}}
+\newcommand{\lfalse}{{\mathbf{false}}}
+
+
+% Conditionals.
+\newcommand{\mlif}[4][]{
+  \begin{array}{@{}l@{}ll}
+    #1 
+    & \mathbf{if} & #2
+    \\
+    & \mathbf{then} & #3
+    \\
+    & \mathbf{else} & #4
+  \end{array}
+}
+
+
+
+
+% Automata and machines.
+\newcommand{\transition}{\delta}
+\newcommand{\transout}{\omega}
+\newcommand{\QStates}{Q}
+\newcommand{\FStates}{F}
+\newcommand{\qState}{q}
+\newcommand{\Outputs}{O}
+
+\newcommand{\StackAlpha}{\Gamma}
+
+\newcommand{\stackchar}{\gamma}
+
+\newcommand{\alphachar}{a}
+
+
+\newcommand{\parsetree}{t}
+\newcommand{\ParseTree}{T}
+
+
+
+
+% Formal languages, syntax and gramars.
+\newcommand{\sembr}[1]{\ensuremath{[\![{#1}]\!]}}
+
+\newenvironment{grammar}{\begin{array}{r@{\;}c@{\;}l@{\;}c@{\;}l@{\;\;\;\;}l}}{\end{array}}
+\newcommand{\grammor}{&&&|&}
+\newcommand{\opor}{\mathrel{|}}
+\newcommand{\matches}{\mathrel{::=}}
+
+\newcommand{\Alphabet}{A}
+
+\newcommand{\Rules}{R}
+\newcommand{\sRules}{\mathit{Rules}}
+\newcommand{\Nonterms}{N}
+\newcommand{\Symbols}{S}
+\newcommand{\Start}{n_0}
+\newcommand{\Generates}{\Rightarrow}
+\newcommand{\generates}{\rightarrow}
+\newcommand{\produces}{\mathrel{::=}}
+\newcommand{\alsoproduces}{\mathrel{{::}{\supset}}}
+\newcommand{\emptystring}{\epsilon}
+\newcommand{\Lang}{\mathcal{L}} % An interpretation function
+\newcommand{\Language}{L} % An actual language.
+\newcommand{\KleeneStar}{\star}
+\newcommand{\nullLang}{\phi}
+\newcommand{\Deriv}{D}
+\newcommand{\prefix}{\leq}
+
+
+\newcommand{\Trans}{{\mathcal{T}}}
+\newcommand{\Conv}{{\mathcal{C}}}
+\newcommand{\ATrans}{{\mathcal{M}}}
+\newcommand{\KTrans}{{\mathcal{X}}}
+\newcommand{\LetK}{{\mathcal{L}}}
+
+
+
+
+\newcommand{\pr}{{\var{pr}}}
+\newcommand{\const}{c}
+\newcommand{\cond}{cond}
+\newcommand{\vv}{v}
+
+
+
+% Languages.
+
+
+%% Generic
+\newcommand{\funarg}{f}
+\newcommand{\atomarg}{\mbox{\textsl{\ae}}}
+\newcommand{\larg}{\mathit{lhs}}
+
+
+%% Lambda calculus
+\newcommand{\Bred}{{\beta}}
+\newcommand{\Bcbv}{\beta_{v}}
+\newcommand{\Bcbn}{\beta_{n}}
+
+\newcommand{\alphaequiv}{\mathrel{\equiv_\alpha}}
+\newcommand{\lam}{\ensuremath{\var{lam}}}
+\newcommand{\ulam}{\ensuremath{\var{ulam}}}
+\newcommand{\clam}{\ensuremath{\var{clam}}}
+\newcommand{\lamterm}{$\lambda$-term}
+\newcommand{\lc}{$\lambda$-calculus}
+
+\newcommand{\call}{\ensuremath{\var{call}}}
+\newcommand{\ucall}{\ensuremath{\var{ucall}}}
+\newcommand{\ccall}{\ensuremath{\var{ccall}}}
+
+\newcommand{\lt}[2]{\lambda #1.#2}
+
+
+\newcommand{\cmatch}{\mathbf{match}}
+\newcommand{\cmatched}[5]{\cmatch\; (#1)\begin{cases} #2 &\mapsto #3 \\ #4 &\mapsto #5 \end{cases}}
+\newcommand{\czero}{\mathbf{zero}}
+\newcommand{\csucc}{\mathbf{succ}}
+\newcommand{\ctrue}{\mathbf{true}}
+\newcommand{\cfalse}{\mathbf{false}}
+\newcommand{\cvoid}{\mathbf{void}}
+\newcommand{\cif}[3]{\mathbf{if}\; #1\; \mathbf{then}\; #2\; \mathbf{else}\; #3}
+\newcommand{\clet}[3]{\mathbf{let}\; #1 = #2\; \mathbf{in}\; #3}
+\newcommand{\cletrec}[3]{\mathbf{let}\; \mathbf{rec}\; #1 = #2\; \mathbf{in}\; #3}
+\newcommand{\cnil}{\mathbf{nil}}
+\newcommand{\ccons}{\mathbf{cons}}
+\newcommand{\cmap}{\mathbf{map}}
+\newcommand{\cU}{\mathbf{U}}
+\newcommand{\cY}{\mathbf{Y}}
+\newcommand{\cfix}{\mathbf{fix}}
+\newcommand{\cthis}{\mathbf{this}}
+
+\newcommand{\free}{\mathit{free}}
+\newcommand{\vars}{\mathit{vars}}
+
+
+
+%% Pseudo-code.
+\newcommand{\takes}{:=}
+
+
+%% Proc lang.
+\newcommand{\procif}[3]{{\tt if}\; \ttlp#1\ttrp\; \ttlc\; #2\; \ttrc\; {\tt else}\; \ttlc\; #3 \;\ttrc}
+
+
+%% Scheme.
+\newcommand{\ttcomma}{\mbox{\tt ,}}
+\newcommand{\ttplus}{\mbox{\tt +}}
+\newcommand{\tttimes}{\mbox{\tt *}}
+\newcommand{\schtrue}{{\mbox{\tt\#t}}}
+\newcommand{\schfalse}{{\mbox{\tt\#f}}}
+\newcommand{\schclause}[1]{\ttlp #1\ttrp}
+
+\newcommand{\ttdol}{\mbox{\tt \$}}
+\newcommand{\ttfs}{\mbox{\tt .}}
+\newcommand{\ttcm}{\mbox{\tt ,}}
+\newcommand{\ttlp}{\mbox{\tt (}}
+\newcommand{\ttrp}{\mbox{\tt )}}
+\newcommand{\ttlc}{\mbox{\tt \{}}
+\newcommand{\ttrc}{\mbox{\tt \}}}
+\newcommand{\appform}[2]{\ttlp #1\; #2\ttrp}
+\newcommand{\lamform}[2]{\ttlp \uplambda\;\ttlp#1\ttrp\;#2\ttrp}
+
+\newcommand{\llamform}[3]{\ttlp \uplambda^{#1}\;\ttlp#2\ttrp\;#3\ttrp}
+\newcommand{\lappform}[3]{\ttlp #2\; #3\ttrp^{#1}}
+\newcommand{\lvar}[2]{{#2}^{#1}}
+
+\newcommand{\ifform}[3]{\ttlp {\tt if}\; #1\; #2\; #3\ttrp}
+\newcommand{\setform}[3]{\ttlp \mbox{\tt set!-then}\; #1\; #2\; #3\ttrp}
+\newcommand{\setfieldthenform}[3]{\ttlp \mbox{\tt set-field!-then}\; #1\; #2\; #3\ttrp}
+\newcommand{\letrecform}[2]{\ttlp {\tt letrec}\; \ttlp#1\ttrp\; #2\ttrp}
+\newcommand{\letiform}[3]{\ttlp {\tt let}\; \ttlp\ttlp#1\; #2\ttrp\ttrp\; #3\ttrp}
+
+\newcommand{\prim}{\mathit{op}}
+
+
+%% CPS.
+\newcommand{\uexp}{w}
+
+
+%% ANF
+\newcommand{\of}{\mathit{of}}
+\newcommand{\field}{\mathit{field}}
+\newcommand{\accform}[2]{#1\ttfs#2}
+\newcommand{\newform}[1]{\ttlp {\tt new}\; #1 \ttrp}
+
+
+
+%% Goto/While.
+\newcommand{\ttsc}{\mbox{\tt ;}}
+
+\newcommand{\inst}{\iota}
+\newcommand{\stmt}{s}
+
+\newcommand{\lab}{\ell}
+
+\newcommand{\lhs}{\var{lhs}}
+\newcommand{\rhs}{\var{rhs}}
+\newcommand{\rv}{\var{rv}}
+
+\renewcommand{\arg}{\mbox{\textsl{\ae}}}
+
+\newcommand{\Stmt}{\syn{Stmt}}
+\newcommand{\Inst}{\syn{Inst}}
+
+
+\newcommand{\glabinst}[2]{#1 \mathrel{:} #2}
+\newcommand{\gassn}{\mapsfrom}
+\newcommand{\gassnstmt}[2]{#1 \ggets #2}
+\newcommand{\gallocstmt}[2]{#1 \ggets \mathbf{alloc}(#2)}
+\newcommand{\gnewstmt}[2]{#1 \ggets \mathbf{new}()}
+
+\newcommand{\fexpr}{f}
+\newcommand{\expr}{e}
+\newcommand{\aexpr}{\mbox{\sl {\ae}}}
+\newcommand{\exprs}{E}
+\newcommand{\exps}{E}
+
+\newcommand{\dvexpr}{{\dot{V}}}
+\newcommand{\vexpr}{V}
+\newcommand{\avexpr}{{\hat{V}}}
+\newcommand{\advexpr}{{\dot{\hat{V}}}}
+
+
+\newcommand{\dec}{\mathit{dec}}
+\newcommand{\Dec}{\syn{Dec}}
+
+
+\newcommand{\gnewcell}{\mathbf{new\; cell}} 
+
+\newcommand{\ggoto}{\mathbf{goto}}
+\newcommand{\ggotostmt}[1]{\ggoto\; #1}
+\newcommand{\gif}[2]{\mathbf{if}\; #1\;\mathbf{goto}\; #2}
+\newcommand{\gcomp}[2]{#1\;\mbox{\tt ;}\;#2}
+\newcommand{\gskip}{\mathbf{skip}}
+\newcommand{\greturn}{\mathbf{return}}
+\newcommand{\ggets}{\mathrel{:=}}
+\newcommand{\gprocedure}[2]{\mathbf{procedure}\; (#1)\; \{ #2 \}}
+\newcommand{\gcall}{\mathbf{call}}
+\newcommand{\gdec}[2]{\mathbf{define}\; #1 = #2}
+
+\newcommand{\gv}{\mathit{gv}}
+
+
+\newcommand{\gaddrof}[1]{\mbox{\tt \&}#1}
+\newcommand{\gvalat}[1]{\mbox{\tt *}#1}
+%\newcommand{\greturn}[1]{\mathbf{return}\; #1}
+
+\newcommand{\op}{{\var{op}}}
+
+\newcommand{\gsucc}{\var{succ}}
+\newcommand{\gsuccs}{\var{succs}}
+\newcommand{\gpred}{\var{pred}}
+\newcommand{\gpreds}{\var{preds}}
+\newcommand{\gflows}{\var{flows}}
+\newcommand{\InstOf}{\mathcal{L}}
+
+
+%% Formal languages.
+\newcommand{\Langs}{{\mathbb{L}}}
+
+\newcommand{\regor}{\mathrel{\mbox{\tt |}}}
+\newcommand{\regrep}{\mbox{\tt *}}
+\newcommand{\emptypat}{\epsilon}
+\newcommand{\nopat}{\phi}
+
+\newcommand{\first}{\var{first}}
+\newcommand{\follow}{\var{follow}}
+\newcommand{\rest}{\var{rest}}
+\newcommand{\fempty}{\var{e}}
+
+\newcommand{\nullable}[1]{{#1}^\emptystring}
+
+\newcommand{\combinator}{\tau}
+\newcommand{\Combinator}{{\mathcal{T}}}
+
+\newcommand{\fullcomb}[1]{{\lfloor #1 \rfloor}}
+
+
+
+% Semantics.
+\newenvironment{statespace}{\begin{array}{r@{\;}c@{\;}l@{\;}c@{\;}l@{\;\;\;\;}l}}{\end{array}}
+
+
+\newcommand{\Eval}{{\mathcal{E}}}
+\newcommand{\ArgEval}{{\mathcal{A}}}
+\newcommand{\AddrOf}{{\mathcal{X}}}
+\newcommand{\OpEval}{{\mathcal{O}}}
+
+\newcommand{\meanfun}{{\mathcal{M}}}
+\newcommand{\Inject}{{\mathcal{I}}}
+\newcommand{\Final}{{\mathcal{F}}}
+\newcommand{\Traces}{{\mathcal{T}}}
+\newcommand{\FinTraces}{{\overline {\mathcal{T}}}}
+\newcommand{\Visitable}{{\mathcal{V}}}
+\newcommand{\TGraph}{{\mathcal{G}}}
+\newcommand{\Konst}{{\mathcal{K}}}
+
+\newcommand{\GState}{C}
+\newcommand{\gstate}{c}
+
+\newcommand{\TState}{{\overline{\Sigma}}^*}
+\newcommand{\State}{\Sigma}
+\newcommand{\state}{\varsigma}
+
+\newcommand{\QState}{Q}
+\newcommand{\qstate}{q}
+
+\newcommand{\MState}{{{\Xi}}}
+\newcommand{\mstate}{{{\xi}}}
+
+%\newcommand{\Clo}{\s{Clo}} 
+\newcommand{\Env}{\s{Env}} 
+\newcommand{\BEnv}{\s{BEnv}} 
+\newcommand{\Store}{\s{Store}}
+\newcommand{\OStore}{\s{OStore}}
+\newcommand{\Den}{D} % Denotable values
+\newcommand{\Obj}{Obj} % Objects
+\newcommand{\Addr}{\s{Addr}} 
+\newcommand{\OPtr}{\s{OPtr}}
+\newcommand{\KontPtr}{\s{KontPtr}}
+\newcommand{\LDen}{\mathit{LD}} % Local denotable values
+\newcommand{\GDen}{\mathit{GD}} % Global denotable values
+
+\newcommand{\tF}{F}
+\newcommand{\tf}{f}
+\newcommand{\tl}{\delta}
+
+\newcommand{\bas}{\mathit{bas}}
+\newcommand{\den}{d}
+\newcommand{\obj}{o}
+\newcommand{\optr}{\ptr{\obj}}
+\newcommand{\lden}{\mathit{ld}}
+\newcommand{\gden}{\mathit{gd}}
+\newcommand{\proc}{\mathit{proc}}
+\newcommand{\store}{\sigma}
+\newcommand{\ostore}{\omega}
+\newcommand{\env}{\rho}
+\newcommand{\benv}{\beta}
+\newcommand{\clo}{\var{clo}}
+\newcommand{\cont}{\kappa}
+\newcommand{\contptr}{\ptr{\cont}}
+
+
+\newcommand{\ptr}[1]{{p\!\!^{^{#1}}}}
+\newcommand{\alloc}{\mathit{alloc}}
+\newcommand{\oaddr}{\ptr{\obj}}
+\newcommand{\addr}{a}
+\newcommand{\laddr}{a}
+
+\newcommand{\val}{\var{val}}
+
+\newcommand{\tm}{t}
+\newcommand{\tick}{{{tick}}}
+
+
+
+
+% Static analysis.
+\newcommand{\ameanfun}{\hat{{\mathcal{M}}}}
+\newcommand{\analfun}{{\mathcal{A}}}
+
+\newcommand{\Sims}{{\mathcal{S}}}
+
+\newcommand{\stmts}{{\mathit{S}}}
+\newcommand{\Stmts}{{\mathit{Stmts}}}
+\newcommand{\Vars}{{\mathit{Vars}}}
+\newcommand{\varset}{{V}}
+\newcommand{\Exps}{{\mathit{Exps}}}
+
+\newcommand{\aVals}{{\mathit{Vals}}}
+
+\newcommand{\AExps}{\mathit{AExps}}
+\newcommand{\Lives}{\mathit{Lives}}
+\newcommand{\VBusy}{\mathit{VBusy}}
+\newcommand{\Reaching}{\mathit{Reaching}}
+
+\newcommand{\aAExps}{\widehat{\mathit{AExps}}}
+\newcommand{\aLives}{\widehat{\mathit{Lives}}}
+
+
+\newcommand{\fdef}{\mathit{firstDef}}
+\newcommand{\fuse}{\mathit{firstUse}}
+
+\newcommand{\Gen}{\mathit{Gen}}
+\newcommand{\Kill}{\mathit{Kill}}
+
+
+
+%% Verification.
+\newcommand{\measfun}{M}
+
+
+
+%% Abstract semantics.
+\newcommand{\aTo}{\leadsto}
+\newcommand{\aoT}{<\!\!\sim}
+
+\newcommand{\widen}{\nabla}
+\newcommand{\narrow}{\Delta}
+
+
+\newcommand{\aKonst}{{\hat{\mathcal{K}}}}
+\newcommand{\aInject}{{\hat{\mathcal{I}}}}
+\newcommand{\aFinal}{{\hat{\mathcal{F}}}}
+\newcommand{\aVisitable}{{\hat{\mathcal{V}}}}
+
+
+\newcommand{\sa}[1]{\widehat{\mathit{#1}}}
+\newcommand{\saD}{{\hat{D}}}
+
+
+\newcommand{\as}{{\hat{s}}}
+\newcommand{\saS}{{\hat{S}}}
+
+\newcommand{\av}{{\hat{v}}}
+\newcommand{\saV}{{\hat{V}}}
+\newcommand{\ax}{{\hat{x}}}
+\newcommand{\saX}{{\hat{X}}}
+\newcommand{\ay}{{\hat{y}}}
+\newcommand{\saY}{{\hat{Y}}}
+
+\newcommand{\aEval}{{\hat{\mathcal{E}}}}
+\newcommand{\aArgEval}{{\hat{\mathcal{A}}}}
+\newcommand{\aAddrOf}{{\hat{\mathcal{X}}}}
+\newcommand{\aOpEval}{{\hat{\mathcal{O}}}}
+
+\newcommand{\atF}{{\hat{F}}}
+\newcommand{\atf}{{\hat{f}}}
+\newcommand{\atl}{{\hat{\delta}}}
+
+\newcommand{\aQState}{{\hat{Q}}}
+\newcommand{\aqstate}{{\hat{q}}}
+
+\newcommand{\aMState}{{\hat{\Xi}}}
+\newcommand{\amstate}{{\hat{\xi}}}
+
+\newcommand{\aState}{{\hat{\Sigma}}}
+\newcommand{\astate}{{\hat{\varsigma}}}
+
+\newcommand{\aClo}{\sa{Clo}}
+\newcommand{\aEnv}{\sa{Env}} 
+\newcommand{\aBEnv}{\sa{BEnv}}
+\newcommand{\aStore}{\sa{Store}}
+\newcommand{\aOStore}{\sa{OStore}}
+\newcommand{\aOPtr}{\sa{OPtr}}
+\newcommand{\aObj}{\sa{Obj}}
+\newcommand{\aDen}{\hat{D}} % Denotable values
+\newcommand{\aAddr}{\sa{Addr}} 
+
+\newcommand{\astore}{{\hat{\sigma}}}
+\newcommand{\aenv}{{\hat{\rho}}}
+\newcommand{\abenv}{{\hat{\beta}}}
+\newcommand{\aclo}{{\widehat{\var{clo}}}}
+\newcommand{\aobj}{{\hat \obj}}
+\newcommand{\aCLO}{{\hat{C}}}
+\newcommand{\acont}{{\hat{\kappa}}}
+\newcommand{\acontptr}{\ptr{\acont}}
+\newcommand{\aoptr}{\ptr{\aobj}}
+\newcommand{\abas}{{\widehat{bas}}}
+\newcommand{\aden}{{\hat{d}}}
+\newcommand{\aproc}{{\widehat{\mathit{proc}}}}
+
+\newcommand{\aaddr}{{\hat{\addr}}}
+\newcommand{\aalloc}{{\widehat{alloc}}}
+
+\newcommand{\aval}{{\widehat{\var{val}}}}
+
+\newcommand{\atick}{{\widehat{tick}}}
+\newcommand{\atm}{{\hat t}}
+
+
+
+\newcommand{\propmap}{\pi}
+\newcommand{\repmap}{\beta}
+\newcommand{\absmap}{\alpha}
+\newcommand{\abs}[1]{|#1|}
+\newcommand{\concmap}{\gamma}
+
+\newcommand{\aInts}{{\hat{\mathbb{Z}}}}
+\newcommand{\az}{{\hat{z}}}
+\newcommand{\ipos}{\mathit{pos}}
+\newcommand{\ineg}{\mathit{neg}}
+\newcommand{\izero}{\mathit{zero}}
+
+
+%% Abstract garbage collection.
+\newcommand{\GC}{\Gamma}
+\newcommand{\aGC}{\hat{\Gamma}}
+
+\newcommand{\Reaches}{\mathcal{R}}
+\newcommand{\aReaches}{\hat{\mathcal{R}}}
+
+\newcommand{\Touches}{\mathcal{T}}
+\newcommand{\aTouches}{{\hat{\mathcal{T}}}}
+
+\newcommand{\Roots}{\mathit{Roots}}
+\newcommand{\aRoots}{\widehat{\mathit{Roots}}}
+
+

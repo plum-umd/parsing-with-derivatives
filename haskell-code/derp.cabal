@@ -1,0 +1,32 @@
+Name:                derp
+Version:             0.1.6
+Description:         A parser based on derivatives of parser combinators (Might
+                     and Darais).  Our paper on Arxiv details the theory of
+                     parsing with derivatives: <http://arxiv.org/abs/1010.5023>.
+                     This implementation uses my latest work on the theory that
+                     brings the O(n*|G|^2) complexity bound to O(n) for parsing
+                     most not-painfully-ambiguous grammars.  (|G| would be the
+                     size of the initial grammar, n would be size of the input.
+                     These bounds are based off of observation and intuition;
+                     they are not proven yet.)  This implementation will not
+                     terminate if the resulting parse forest is infinite.  We
+                     know how to extend the implementation to work for infinite
+                     parse forests with little effort.  If this is something
+                     you would like to see, send me an email.
+Synopsis:            Derivative Parsing
+License:             BSD3
+License-file:        LICENSE
+Author:              David Darais
+Maintainer:          david.darais@gmail.com
+Stability:           Experimental
+Category:            Parsing
+Build-type:          Simple
+Cabal-version:       >=1.6
+
+Library
+  HS-Source-Dirs: src
+  Exposed-Modules: Text.Derp
+  Build-Depends: 
+      base < 5
+    , containers >= 0
+  Ghc-Options: -Wall

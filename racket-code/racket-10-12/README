@@ -1,0 +1,25 @@
+Originally authored by Matt Might.
+Updates and zippers by David Darais.
+
+changes from older version:
+
+derp-core:
+  * changed token to token-p (to emphasize the fact that it takes a predicate)
+    * token is now defined in terms of token-p
+    * derp-test was written to use token as taking a literal and not a predicate
+  * nth derivative is defined as a helper
+derp-optimize:
+  * renamed ∅? and ε? to essentially-∅? and essentially-ε? to avoid confusion and conflict
+  * added missing δ case to essentially-ε
+  * fixed incorrect bottom element for essentially-ε
+  * added nullable? analysis (needed for missing δ case of essentially-∅)
+  * fixed incorrect case for ε in essentially-∅
+  * added missing δ case to essentially-∅
+  * removed two redundant cases for → in K
+  * nth derivative is defined as a helper
+derp-zip:
+  * implemented zipper optimization
+derp-reify:
+  * implemented graph reification and dot visualization
+derp-test:
+  * implemented tests which visualize the results

@@ -1,0 +1,63 @@
+\documentclass{sigplanconf}
+
+\usepackage{amsmath,amssymb,amsthm,latexsym}
+
+\usepackage{code}
+
+\usepackage{graphicx}
+
+\input{matt-might-macros}
+\input{local-macros}
+\input{meta}
+
+%\usepackage[nocenter]{qtree}
+
+\newtheorem{theorem}{Theorem}[section]
+
+\newtheorem{example}{Example}[section]
+
+\usepackage{stmaryrd}
+
+
+\begin{document}
+
+\conferenceinfo{ICFP'11,} {September 19--21, 2011, Tokyo, Japan.}
+\CopyrightYear{2011}
+\copyrightdata{978-1-4503-0865-6/11/09} 
+
+
+\titlebanner{\mytitlebanner}        % These are ignored unless
+\preprintfooter{\footertitle}       % 'preprint' option specified.
+
+\title{\mytitle}
+\subtitle{\mysubtitle}
+
+\authorinfo{Matthew Might \and David Darais}
+           {University of Utah}
+           {\texttt{might@cs.utah.edu}, \texttt{david.darais@gmail.com}}
+
+
+\authorinfo{Daniel Spiewak}
+           {University of Wisconsin, Milwaukee}
+           {\texttt{dspiewak@uwm.edu}}
+\maketitle
+
+\begin{abstract}
+  \input{abstract}
+\end{abstract}
+
+\category{F.4.3}{Formal Languages}{Operations on languages}
+ 
+\terms Algorithms, Languages, Theory
+ 
+\keywords formal languages, parsing, derivative, regular expressions,
+context-free grammar, parser combinator
+
+
+\input{content}
+
+\bibliographystyle{acm}
+\bibliography{mattmight}
+
+\end{document}
+

@@ -1,0 +1,19 @@
+digraph grammar {
+
+graph [
+ rankdir = "LR"
+];
+
+"A" [
+ label = "A grammar | foo bar |  <L> | <R>  " 
+ shape = "record"
+];
+
+"B" [
+ label = "B grammar | <f2> baz"
+ shape = "record"
+];
+
+"A":L -> "B":f2 ;
+
+}

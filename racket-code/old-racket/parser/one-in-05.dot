@@ -1,0 +1,148 @@
+digraph {
+
+node [];
+"51" [label = "or"
+];
+
+"52" [label = "or"
+];
+
+"53" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"55" [shape = "record", label = "eps* | (set '())"
+];
+
+"56" [label = "empty"
+];
+
+"53":L -> "55" [
+];
+
+"53":R -> "56" [
+];
+
+"54" [label = "or"
+];
+
+"57" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"59" [shape = "record", label = "eps* | (set '(() . 1))"
+];
+
+"57":L -> "59" [
+];
+
+"57":R -> "56" [
+];
+
+"58" [label = "or"
+];
+
+"60" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"62" [shape = "record", label = "eps* | (set '((() . 1) . 1))"
+];
+
+"60":L -> "62" [
+];
+
+"60":R -> "56" [
+];
+
+"61" [label = "or"
+];
+
+"63" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"65" [shape = "record", label = "eps* | (set '(((() . 1) . 1) . 1))"
+];
+
+"63":L -> "65" [
+];
+
+"63":R -> "56" [
+];
+
+"64" [label = "or"
+];
+
+"66" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"68" [shape = "record", label = "eps* | (set '((((() . 1) . 1) . 1) . 1))"
+];
+
+"50" [shape = "record", label = "eps* | (set 1)"
+];
+
+"66":L -> "68" [
+];
+
+"66":R -> "50" [
+];
+
+"67" [shape="none", margin=0, label = <
+<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td colspan="2">seq</td></tr><tr><td port="L">L</td><td port="R">R</td></tr></table>>
+];
+
+"43" [shape = "record", label = "token | 1"
+];
+
+"67":L -> "51" [
+];
+
+"67":R -> "43" [
+];
+
+"64" -> "66" [
+];
+
+"64" -> "67" [
+];
+
+"61" -> "63" [
+];
+
+"61" -> "64" [
+];
+
+"58" -> "60" [
+];
+
+"58" -> "61" [
+];
+
+"54" -> "57" [
+];
+
+"54" -> "58" [
+];
+
+"52" -> "53" [
+];
+
+"52" -> "54" [
+];
+
+"46" [label = "empty"
+];
+
+"51" -> "52" [
+];
+
+"51" -> "46" [
+];
+
+"51" [shape = "doublecircle"
+];
+
+}

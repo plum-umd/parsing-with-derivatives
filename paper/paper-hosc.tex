@@ -1,0 +1,64 @@
+\documentclass{kluwer}
+
+% \usepackage{amsmath,amssymb,amsthm,latexsym}
+
+\let\iint\undefined
+\let\iiint\undefined
+
+\usepackage{amsmath,latexsym}
+
+
+\usepackage{code}
+
+\usepackage{graphicx}
+
+\let\dom\undefined
+\let\range\undefined
+
+\input{matt-might-macros}
+\input{local-macros}
+\input{meta}
+
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+
+%\let\lt\undefined
+%\usepackage{lgreek}
+
+\usepackage{upgreek}
+
+
+
+%\usepackage[nocenter]{qtree}
+
+\newtheorem{theorem}{Theorem}[section]
+
+\newtheorem{example}{Example}[section]
+
+\usepackage{stmaryrd}
+
+
+\begin{document}
+
+% \authorinfo{Matthew Might \and David Darais}
+%            {University of Utah}
+%            {\texttt{might@cs.utah.edu}, \texttt{david.darais@gmail.com}}
+
+
+% \authorinfo{Daniel Spiewak}
+%           {University of Wisconsin, Milwaukee}
+%            {\texttt{dspiewak@uwm.edu}}
+\maketitle
+
+\section{Abstract}
+  \input{abstract}
+
+
+
+\input{content}
+
+\bibliographystyle{acm}
+\bibliography{mattmight}
+
+\end{document}
+
